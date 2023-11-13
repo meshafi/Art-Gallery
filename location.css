@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40rem 32rem 16rem;
+}
+.top {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/Maps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.location {
+  display: flex;
+  width: fit-content;
+}
+.location:hover {
+  cursor: pointer;
+}
+.location-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 12.5rem;
+  height: 4.5rem;
+}
+.location-btn p {
+  display: flex;
+  margin: 0;
+  color: var(--White, #fff);
+  font-family: Big Shoulders Display;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.22725rem;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  padding-bottom: auto;
+}
+.mid div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mid h1 {
+  width: 15rem;
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Heading (L) */
+  font-family: Big Shoulders Display;
+  font-size: 4.375rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.375rem; /* 100% */
+  text-transform: uppercase;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+}
+.address h2 {
+  color: var(--Gold, #d5966c);
+  font-feature-settings: "clig" off, "liga" off;
+  width: fit-content;
+  font-family: Big Shoulders Display;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+}
+.address p {
+  margin-top: 2rem;
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  width: 35vw;
+  font-family: Outfit;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem; /* 145.455% */
+}
+
+.flex-footer {
+  background-color: #d5966c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 16rem;
+}
+.flex-footer .flex-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-heading {
+  height: 3.5rem;
+  width: 10rem;
+  fill: var(--Almost-Black, #151515);
+  background-image: url("./images/MODERNARTGALLERY\ \(1\).png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer-text p {
+  color: var(--Almost-Black, #151515);
+  font-family: Outfit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem; /* 155.556% */
+}
+.footer-text {
+  width: 25vw;
+}
+.footer-icons {
+  width: 6.25rem;
+  height: 1.25rem;
+  background-image: url("./images/Group\ 5.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.flex-content img {
+  margin-right: 0.5rem;
+}
+.flex-content img:hover {
+  cursor: pointer;
+}
+
+ /*media query for tablet */
+ @media screen and (max-width: 800px) {
+  .mid h1 {
+    font-size: 3.4375rem;
+    line-height: 3.125rem;
+    width: 36vw;
+  }
+
+  .address h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .address p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .footer-heading {
+    height: 2.5rem;
+    width: 6.8rem;
+  }
+  .footer-text p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  .footer-text {
+    width: 40vw;
+  }
+
+  /* media screen for mobile view */
+  @media screen and (max-width: 500px) {
+    .mid h1 {
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+      width: 90vw;
+    }
+    .mid div {
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+    }
+    .address p {
+      width: 80vw;
+    }
+
+    .flex-footer .flex-content {
+      flex-direction: column;
+    }
+    .footer-heading,
+    .footer-text,
+    .footer-icons {
+      margin-top: 2rem;
+    }
+    .flex-footer {
+      height: 20rem;
+    }
+    .flex-footer {
+      align-items: center;
+    }
+    .flex-footer p {
+      width: 80vw;
+    }
+    .flex-content {
+      width: 80vw;
+    }
+    .social-icons {
+      margin-top: 2rem;
+    }
+  }
+}
